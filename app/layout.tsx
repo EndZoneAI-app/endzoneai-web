@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'EndZoneAI — AI-Powered Sports Intelligence',
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="min-h-screen bg-[#0a0a0a] text-white antialiased">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
